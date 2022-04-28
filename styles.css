@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 
 div.all{
     font-family: 'Montserrat', sans-serif; /* Default code to Monteserrat for whole doc*/
     font-style: normal;
 }
 header{
-    margin: 20px;
-    background-color: yellowgreen;
+    margin: 50px;
+    /* background-color: yellowgreen; */
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -14,12 +16,16 @@ header{
     letter-spacing: -0.015em;
     color: #032D23;
 }
+div.hidden{
+    width: 75%
+}
 h1{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 36px;
     letter-spacing: -0.015em;
     color: #032D23;
+    margin-bottom: 10px;;
 }
 p{
     font-weight: 400;
@@ -27,6 +33,7 @@ p{
     line-height: 30px;
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
+    height: 90px;
 }
 
 /* Nav */
@@ -34,8 +41,14 @@ nav{
     display: flex;
     width: 100vw;
     height: 100px;
-    background-color: aquamarine;
+    border-bottom:5px solid;
+    border-bottom-color: #AAA713;
     top: 0px;
+}
+div.nav_class{
+    /* background-color: rosybrown; */
+    display: flex;
+    flex-direction: row;
 }
 div.nav_text{
     font-family: 'Roboto';
@@ -45,27 +58,49 @@ div.nav_text{
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #414548;
+    color: #5A5A5A;
+    padding: 30px;
 }
 
 #logo{
     height: 100%;
 }
+#login{
+    height: 50%;
+}
+div.login_image{
+    height: 100;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
 div.main{
     display: flex;
     flex-direction: row;
-    background-color: aquamarine;
-    justify-content: center;
+    /* background-color: aquamarine; */
+    justify-content: space-evenly;
+    margin: 50px;
+
 }
 div.subsection1{
     display: flex;
     flex-direction: column;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
+    max-width: 600px;
+    min-width: 400px;
 }
 div.subsection2{
     display: flex;
     flex-direction: column;
-    background-color: orange;
+    /* background-color: orange; */
+    max-width: 600px;
+    min-width:400px;
+}
+div.subsub{
+    background-color: #AAA713;
+    padding: 20px;
 }
 
 /* button */
@@ -75,6 +110,9 @@ button{
     box-sizing: border-box;
     border-radius: 6px;
     color: #FFFFFF;
+    width: 130px;
+    height: 40px;
+    margin-top: 50px; 
 }
 .spacing{
     margin: 20px;
