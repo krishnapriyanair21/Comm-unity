@@ -117,3 +117,12 @@ button{
 .spacing{
     margin: 20px;
 }
+
+div.intro{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+}
