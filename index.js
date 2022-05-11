@@ -5,23 +5,9 @@
 // A static server using Node and Express
 const express = require("express");
 
-// local modules
-const db = require("./sqlWrap");
-const win = require("./pickWinner");
-
-
 // gets data out of HTTP request body 
 // and attaches it to the request object
 const bodyParser = require('body-parser');
-
-
-/* might be a useful function when picking random videos */
-function getRandomInt(max) {
-  let n = Math.floor(Math.random() * max);
-  // console.log(n);
-  return n;
-}
-
 
 /* start of code run on start-up */
 // create object to interface with express
@@ -40,27 +26,12 @@ app.use(express.static("public"));
 
 // if no file specified, return the main page
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/public/compare.html");
+  response.sendFile(__dirname + "/public/homepage.html");
 });
 
 // Get JSON out of HTTP request body, JSON.parse, and put object into req.body
 app.use(bodyParser.json());
 
-
-app.get("/getWinner", async function(req, res) {
-  console.log("getting winner");
-  try {
-  // change parameter to "true" to get it to computer real winner based on PrefTable 
-  // with parameter="false", it uses fake preferences data and gets a random result.
-  // winner should contain the rowId of the winning video.
-  let winner = await win.computeWinner(8,false);
-
-  // you'll need to send back a more meaningful response here.
-  res.json({});
-  } catch(err) {
-    res.status(500).send(err);
-  }
-});
 
 
 // Page not found
