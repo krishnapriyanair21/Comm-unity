@@ -1,0 +1,37 @@
+div.links{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+div.mainLinksCol{
+  background-color: rgba(170, 167, 19, 0.4);
+  width: 55vw;
+  height:auto;
+  padding: 10px;
+}
+div.quickLinksCol{
+  padding: 10px;
+  background-color: rgba(170, 167, 19, 0.4);
+  width: 30vw;
+  height: 300px;
+}
+a{
+  margin: 10px;
+}
+a:link, a:visited {
+  background-color: #032D23;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
+}
+
+a:hover, a:active {
+  background-color: #5A5A5A;
+}
+h2#main_links_intro{
+  font-size: 25px;
+  text-align: center;
+}

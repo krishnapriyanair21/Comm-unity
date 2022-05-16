@@ -1,8 +1,40 @@
 div.intro{
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    justify-content: center;
-    align-content: center;
-    margin: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 50px;
+}
+
+
+p{
+  height:auto;
+}
+p#abstract{
+  border-style: solid;
+  border: 2px; 
+}
+div.team{
+  display:flex;
+  flex-direction: column;
+}
+div.player{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  align-items: center;
+}
+.full_width{
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+div.player_img{
+  align-self: center; 
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  margin-right: 20px;
+}

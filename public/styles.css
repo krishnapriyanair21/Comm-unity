@@ -51,6 +51,9 @@ div.nav_class{
   display: flex;
   flex-direction: row;
 }
+div.nav_class:hover{
+  cursor: pointer;
+}
 div.nav_text{
   font-family: 'Roboto';
   font-style: normal;
@@ -63,11 +66,18 @@ div.nav_text{
   padding: 30px;
 }
 
+
 #logo{
   height: 100%;
 }
+#logo:hover{
+  cursor:pointer;
+}
 #login{
   height: 50%;
+}
+#login:hover{
+  cursor: pointer;
 }
 div.login_image{
   height: 100;
@@ -100,7 +110,7 @@ div.subsection2{
   min-width:400px;
 }
 div.subsub{
-  background-color: #AAA713;
+  background-color: rgba(170, 167, 19, 0.4);
   padding: 20px;
 }
 
@@ -115,7 +125,19 @@ button{
   height: 40px;
   margin-top: 50px; 
 }
+button:hover{
+  cursor: pointer;
+}
 .spacing{
   margin: 20px;
 }
 
+h2{
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #032D23;
+  background-color: rgba(170, 167, 19, 0.4);
+  margin-bottom: 10px;
+}
