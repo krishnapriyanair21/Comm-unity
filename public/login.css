@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+/* Container */
+
+
+.container{
+  display: flex
+  height: 500px;
+  width: 800px;
+  border: 1px solid black; 
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 15px 15px 20px black;
+}
+
+/* Login Form */
+.form{
+  display: flex;
+  flex-direction:column;
+  width: 50%
+  align items: center 
+  background-color: whitesmoke;
+}
+
+.form header{
+  text-align:center;
+  font-size: 4rem;
+  font-family: Comic Sans MS, Comic Sans, 'cursive sans-serif';
+}
+
+.form h2{
+  text-align:center;
+  padding: 5px;
+  font-size: 2rem;
+  font-family: Comic Sans MS, Comic Sans, 'cursive sans-serif';
+  margin: 5px;
+}
+
+.box{
+  width: 65%;
+  margin: 15px;
+  border 1px solid black;
+  outline: none;
+  border-radius: 20px;
+}
+
+#submit{
+  width: 40%;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin: auto;
+}
+
+#submit:hover{
+  cursor: pointer;
+  background-color: #AAA713;
+}
+
+.form a{
+  padding: 5px 5px;
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+
+.form a:hover{
+  color: #AAA713;
+}
+
+/* Right Side */
+
+
+
